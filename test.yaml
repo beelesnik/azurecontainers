@@ -1,7 +1,7 @@
 version: '3.4'
 services:
   whoami0:
-    image: emilevauge/whoam
+    image: emilevauge/whoami
     deploy:
       labels:
         - traefik.port=80
