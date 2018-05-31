@@ -10,7 +10,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock # So that Traefik can listen to the Docker events
     networks:
-      - traefik-net
+      - lsntraefik_traefik-net
     deploy:
       placement:
         constraints:
