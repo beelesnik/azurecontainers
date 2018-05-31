@@ -1,0 +1,13 @@
+version: '3.4'
+services:
+  whoami0:
+    image: emilevauge/whoam
+    deploy:
+      labels:
+        - traefik.port=80
+    networks:
+      - traefik_default
+    ports:
+      - 80:80
+      - 443:443
+      - 8080:8080
