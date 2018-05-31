@@ -1,0 +1,6 @@
+version: '3'
+services:
+  hello-w:
+    image: acrtestlsn.azurecr.io/aci-helloworld:v1
+    ports:
+        - "80:80"
