@@ -4,8 +4,8 @@ services:
     image: emilevauge/whoami
     deploy:
       labels:
-        - traefik.docker.network=traefik_default
-        - traefik.port=80
+        traefik.docker.network=traefik_default
+        traefik.port=80
     networks:
       - traefik_default
 networks:
